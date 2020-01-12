@@ -1,0 +1,37 @@
+Given the participants' score sheet for your University Sports Day, you are required to find the runner-up score. You are given  scores. Store them in a list and find the score of the runner-up.
+
+Input Format
+
+The first line contains . The second line contains an array   of  integers each separated by a space.
+
+Constraints
+
+Output Format
+
+Print the runner-up score.
+
+Sample Input 0
+
+5
+2 3 6 6 5
+Sample Output 0
+
+5
+Explanation 0
+
+Given list is . The maximum score is , second maximum is . Hence, we print  as the runner-up score.
+Code:
+if "_name__"== "__main__"
+n = int(input())
+arr = list(map(int,input().split())
+arr1 = set(arr)# to remove duplicate values from the list
+arr1.remove(max(arr1))
+print(max(arr1))
+OR
+if "_name__"== "__main__"
+n = int(input())
+arr = list(map(int,input().split())
+if arr[-1] == arr[-2]:
+print(arr[-3])
+else:
+print(arr[-2])
